@@ -10,7 +10,7 @@ on: [push]
   ...
       steps:
         - uses: actions/checkout@v1
-        - uses: jeptechnology/mirror-action@master
+        - uses: mike-scott/mirror-action@master
           with:
             REMOTE: 'https://gitlab.com/jeptechnology/mirror-action.git'
             GIT_ACCESS_TOKEN: ${{ secrets.GIT_ACCESS_TOKEN }}
